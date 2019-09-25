@@ -1,10 +1,10 @@
 # Advanced-Lane-finder
 
 Requirements:
-1- numpy
-2- opencv-python
-3- matplotlib
-4- 
+1- numpy  
+2- opencv-python  
+3- matplotlib  
+4-   
 
 This is an implementation of what I've learnt in Udacity's self driving course about creating an advanced lane finder project.
 
@@ -16,3 +16,8 @@ Also I will provide a link that contains Udacity's instructions about the course
 Steps to be taken in order to create this algorithm:
 
 __1-__ Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
+
+![GitHub Logo](/mytest.jpg)  
+![GitHub Logo](/correction.jpg)  
+
+As you can see the result of camera calibration is succesfull and parameters are saved in the script.
