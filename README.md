@@ -17,7 +17,7 @@ Also I will provide a link that contains Udacity's instructions about the course
 
 Steps to be taken in order to create this algorithm:
 
-##__1-Camera Calibration__   
+## __1-Camera Calibration__   
 Compute the camera calibration matrix and distortion coefficients given a set of chessboard images. Then save the parameters for later use.
 
 
@@ -31,7 +31,7 @@ __Undistorted image__
 __Note:__ As you can see the result of camera calibration is succesfull and parameters are saved in the script.Check camera_calibration script for more details.
 
 
-##__2-Pipeline__  
+## __2-Pipeline__  
 Using the combinations of color and gradient spaces with the goal achiving the pipeline  
 
 Here's a sample of pipeline applied on single image  
