@@ -21,11 +21,11 @@ Steps to be taken in order to create this algorithm:
 Compute the camera calibration matrix and distortion coefficients given a set of chessboard images. Then save the parameters for later use.
 
 
-__Original image__  
+__Original image:__  
 <img src="./pics/mytest.jpg" width="320" height="240">  
 
   
-__Undistorted image__  
+__Undistorted image:__  
 <img src="./pics/correction.jpg" width="320" height="240">    
 
 __Note:__ As you can see the result of camera calibration is succesfull and parameters are saved in the script.Check camera_calibration script for more details.
@@ -39,10 +39,21 @@ Here's a sample of pipeline applied on single image
 The final image is a combination of binary thresholding the S channel (HLS) and the result of applying the Sobel operator in the x direction on the original image.
 
 
-__Original image__  
+__Original image:__  
 <img src="./pics/color_gradient.jpg" width="720" height="480">  
 
   
-__Thresholded image__  
+__Thresholded image:__  
 <img src="./pics/color_gradient_end.png" width="720" height="480">    
 
+
+__Note:__ This is the outcome of color_gradient script to be used in perspective transform later on.  
+
+
+## __3-Perspective Transform__  
+
+Perspective transform applied to the last image, more samples can be find in pics folder. Check warped script for more details.
+
+
+__Transformed image:__  
+<img src="./pics/color_gradient_warped.png" width="720" height="480">   
