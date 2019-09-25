@@ -20,7 +20,9 @@ __1-__ Compute the camera calibration matrix and distortion coefficients given a
 
 __Original image__  
 <img src="./mytest.jpg" width="320" height="240">  
-__Undistorted image__
-<img src="./correction.jpg" width="320" height="240">  
+
+  
+__Undistorted image__  
+<img src="./correction.jpg" width="320" height="240">    
 
 __Note:__ As you can see the result of camera calibration is succesfull and parameters are saved in the script.Check camera_calibration script for more details.
