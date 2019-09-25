@@ -17,7 +17,8 @@ Also I will provide a link that contains Udacity's instructions about the course
 
 Steps to be taken in order to create this algorithm:
 
-__1-__ Compute the camera calibration matrix and distortion coefficients given a set of chessboard images. Then save the parameters for later use.
+##__1-Camera Calibration__   
+Compute the camera calibration matrix and distortion coefficients given a set of chessboard images. Then save the parameters for later use.
 
 
 __Original image__  
@@ -28,3 +29,20 @@ __Undistorted image__
 <img src="./correction.jpg" width="320" height="240">    
 
 __Note:__ As you can see the result of camera calibration is succesfull and parameters are saved in the script.Check camera_calibration script for more details.
+
+
+##__2-Pipeline__  
+Using the combinations of color and gradient spaces with the goal achiving the pipeline  
+
+Here's a sample of pipeline applied on single image  
+
+The final image is a combination of binary thresholding the S channel (HLS) and the result of applying the Sobel operator in the x direction on the original image.
+
+
+__Original image__  
+<img src="./color_gradient.jpg" width="320" height="240">  
+
+  
+__Thresholded image__  
+<img src="./color_gradient_end.png" width="320" height="240">    
+
