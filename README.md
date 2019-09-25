@@ -57,3 +57,9 @@ Perspective transform applied to the last image, more samples can be find in pic
 
 __Transformed image:__  
 <img src="./pics/color_gradient_warped.jpg" width="720" height="480">   
+
+
+## __4-Find Lane Lines__  
+
+Now we have a thresholded, warped image and ready to map out the lane lines. The process is explained in find_lanes script.
+
