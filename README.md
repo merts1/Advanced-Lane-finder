@@ -5,6 +5,7 @@
 pip install numpy  
 pip install opencv-python  
 pip install matplotlib  
+pip install pillow  
 
 ```
 
@@ -61,5 +62,15 @@ __Transformed image:__
 
 ## __4-Find Lane Lines__  
 
-Now we have a thresholded, warped image and ready to map out the lane lines. The process is explained in find_lanes script.
+Now we have a thresholded, warped image and ready to map out the lane lines with the hep of a method called Peaks in a Histogram. The process is explained in find_lanes script in details.
 
+
+__Warped image:__  
+<img src="./pics/warped-example.jpg" width="720" height="480">  
+
+  
+__Sliding windows of lane lines in image:__  
+<img src="./pics/exampe_transformed.png" width="720" height="480">    
+
+
+__Note:__ This is a single image implementation to be used once, you can find the code in lane_finder script.The actual code is going to search polynomial for lane lines from prior search which will make it much more faster.  
