@@ -9,6 +9,7 @@ pip install pillow
 
 ```
 
+
 This is an implementation of what I've learnt in Udacity's self driving course about creating an advanced lane finder project.
 
 You can use the code and change various parts of it to have better results, since it'll be easier for you to read the code with explained comments of mine. 
@@ -74,3 +75,9 @@ __Sliding windows of lane lines in image:__
 
 
 __Note:__ This is a single image implementation to be used once, you can find the code in lane_finder script.The actual code is going to search polynomial for lane lines from prior search which will make it much more faster.  
+
+## __5-Draw polynomial on image__  
+
+Last operation to apply in here is using the inverse matrix of M ,which is used to create perspective transform, painting the area between 2 lines and transforming it back on image. At the end we have a clear picture of dedected lane lines as shown.  
+
+<img src="./pics/last_result.jpg" width="720" height="480">   
