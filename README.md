@@ -76,7 +76,7 @@ __Sliding windows of lane lines in image:__
 
 __Note:__ This is a single image implementation to be used once, you can find the code in lane_finder script.The actual code is going to search polynomial for lane lines from prior search which will make it much more faster.  
 
-## __5-Draw polynomial on image__  
+## __5-Draw polynomial area on image__  
 
 Last operation to apply in here is using the inverse matrix of M ,which is used to create perspective transform, painting the area between 2 lines and transforming it back on image. At the end we have a clear picture of dedected lane lines as shown.  
 
