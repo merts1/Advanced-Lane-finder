@@ -1,6 +1,6 @@
 # Advanced-Lane-finder
 
-Requirements:
+**Requirements:**  
 1- numpy  
 2- opencv-python  
 3- matplotlib  
