@@ -1,10 +1,12 @@
 # Advanced-Lane-finder
 
 **Requirements:**  
-1- numpy  
-2- opencv-python  
-3- matplotlib  
-4-   
+```
+pip install numpy  
+pip install opencv-python  
+pip install matplotlib  
+
+```
 
 This is an implementation of what I've learnt in Udacity's self driving course about creating an advanced lane finder project.
 
