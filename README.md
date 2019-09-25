@@ -17,7 +17,9 @@ Steps to be taken in order to create this algorithm:
 
 __1-__ Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
 
+__Original image__  
 ![GitHub Logo](/mytest.jpg)  
+__Undistorted image__
 ![GitHub Logo](/correction.jpg)  
 
-As you can see the result of camera calibration is succesfull and parameters are saved in the script.
+__Note:__ As you can see the result of camera calibration is succesfull and parameters are saved in the script.Check camera_calibration script for more details.
