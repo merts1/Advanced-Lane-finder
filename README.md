@@ -70,7 +70,7 @@ __Warped image:__
 
   
 __Sliding windows of lane lines in image:__  
-<img src="./pics/example_transformed.png" width="720" height="480">    
+<img src="./pics/example_transformed.jpg" width="720" height="480">    
 
 
 __Note:__ This is a single image implementation to be used once, you can find the code in lane_finder script.The actual code is going to search polynomial for lane lines from prior search which will make it much more faster.  
