@@ -56,4 +56,4 @@ Perspective transform applied to the last image, more samples can be find in pic
 
 
 __Transformed image:__  
-<img src="./pics/color_gradient_warped.png" width="720" height="480">   
+<img src="./pics/color_gradient_warped.jpg" width="720" height="480">   
