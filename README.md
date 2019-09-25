@@ -22,11 +22,11 @@ Compute the camera calibration matrix and distortion coefficients given a set of
 
 
 __Original image__  
-<img src="./mytest.jpg" width="320" height="240">  
+<img src="./pics/mytest.jpg" width="320" height="240">  
 
   
 __Undistorted image__  
-<img src="./correction.jpg" width="320" height="240">    
+<img src="./pics/correction.jpg" width="320" height="240">    
 
 __Note:__ As you can see the result of camera calibration is succesfull and parameters are saved in the script.Check camera_calibration script for more details.
 
@@ -40,9 +40,9 @@ The final image is a combination of binary thresholding the S channel (HLS) and 
 
 
 __Original image__  
-<img src="./color_gradient.jpg" width="320" height="240">  
+<img src="./pics/color_gradient.jpg" width="720" height="480">  
 
   
 __Thresholded image__  
-<img src="./color_gradient_end.png" width="320" height="240">    
+<img src="./pics/color_gradient_end.png" width="720" height="480">    
 
