@@ -1,11 +1,22 @@
+'''
+Mert Hacıahmetoğlu
+
+Advanced lane finder project 
+
+03.09.2019
+'''
+
 import numpy as np
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import cv2
+from warper import *
 
 # This code is only used for test purposes here.
 # You can leave it in comment.
-# binary_warped = cv2.imread('pics/warped-example.jpg')
+binary_warped = cv2.imread('pics/warped-example.jpg')
+color_warp = cv2.imread('pics/color_gradient.jpg')
+image = np.copy(color_warp)
 
 def find_lane_pixels(binary_warped):
     # Take a histogram of the bottom half of the image
@@ -118,11 +129,18 @@ def fit_polynomial(binary_warped):
     plt.plot(left_fitx, ploty, color='yellow')
     plt.plot(right_fitx, ploty, color='yellow')
 
-    return out_img
+    return out_img, left_fitx, right_fitx, ploty
 
 
-# out_img = fit_polynomial(binary_warped)
+out_img, left_fitx, right_fitx, ploty = fit_polynomial(binary_warped)
 # 
-# plt.imshow(out_img)
-# plt.show()
-# plt.imsave("pics/example_transformed.jpg",out_img)
+pts_left = np.array([np.transpose(np.vstack([left_fitx, ploty]))])
+pts_right = np.array([np.flipud(np.transpose(np.vstack([right_fitx, ploty])))])
+pts = np.hstack((pts_left, pts_right))
+cv2.fillPoly(color_warp, np.int_([pts]), (0,255, 0))
+newwarp = cv2.warpPerspective(color_warp, Minv, (binary_warped.shape[1], binary_warped.shape[0]))
+
+result = cv2.addWeighted(image, 1, newwarp, 0.3, 0)
+plt.imshow(result)
+plt.show()
+plt.imsave("last_result.jpg", result)
