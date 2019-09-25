@@ -17,7 +17,7 @@ Also I will provide a link that contains Udacity's instructions about the course
 
 
 
-Steps to be taken in order to create this algorithm:
+Steps to be taken in order to create this program:
 
 ## __1-Camera Calibration__   
 Compute the camera calibration matrix and distortion coefficients given a set of chessboard images. Then save the parameters for later use.
