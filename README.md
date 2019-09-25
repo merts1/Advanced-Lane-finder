@@ -80,4 +80,4 @@ __Note:__ This is a single image implementation to be used once, you can find th
 
 Last operation to apply in here is using the inverse matrix of M ,which is used to create perspective transform, painting the area between 2 lines and transforming it back on image. At the end we have a clear picture of dedected lane lines as shown.  
 
-<img src="./pics/last_result.jpg" width="720" height="480">   
+<img src="./last_result.jpg" width="720" height="480">   
